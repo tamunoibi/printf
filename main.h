@@ -44,7 +44,7 @@ va_list list, char buffer[], int flags, int width, int precision, int size);
 
 /****************** FUNCTIONS ******************/
 
-/* Functions to print chars and strings */
+/* Funtions to print chars and strings */
 int print_char(va_list types, char buffer[],
 int flags, int width, int precision, int size);
 int print_string(va_list types, char buffer[],
@@ -73,11 +73,11 @@ char buffer[], int flags, char flag_ch, int width, int precision, int size);
 int print_non_printable(va_list types, char buffer[],
 int flags, int width, int precision, int size);
 
-/* Function to print memory address */
+/* Funcion to print memory address */
 int print_pointer(va_list types, char buffer[],
 int flags, int width, int precision, int size);
 
-/* Function to handle other specifiers */
+/* Funciotns to handle other specifiers */
 int get_flags(const char *format, int *i);
 int get_width(const char *format, int *i, va_list list);
 int get_precision(const char *format, int *i, va_list list);
@@ -114,3 +114,4 @@ long int convert_size_number(long int num, int size);
 long int convert_size_unsgnd(unsigned long int num, int size);
 
 #endif /* MAIN_H */
+
